@@ -52,7 +52,7 @@ export const TilesQuickLinks: React.FunctionComponent<ITilesQuickLinksProps> = (
       }}
       href={displayMode === DisplayMode.Read && link.Link}
       target={displayMode === DisplayMode.Read && link.Target}
-
+      data-interception="off"
       onClick={displayMode === DisplayMode.Edit && (() => setSelectedItemId(link.Id))}
       onRenderText={(props) => {
         return (
